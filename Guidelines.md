@@ -66,7 +66,7 @@ In some circumstances, we may proceed with the email-based validation. However, 
 For large companies we may require a mailing list such as `security@example.com` or administrative email, rather user-specific emails.
 
 
-## Submitting a Change
+## Submit amendments
 
 Follow this procedure to submit a change to the list.
 
@@ -132,4 +132,3 @@ Patches that don't pass the tests will be rejected.
 ### Follow up
 
 Please follow up to the ticket. Also make sure that the email you listed in the pull request is valid, as we may use it for validation or private follow ups.
-
