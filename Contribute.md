@@ -1,3 +1,5 @@
+# Contribution Guidelines
+
 In order to make the Public Suffix List as current and accurate as possible, we request that TLD registries put in place processes to keep their section of the list current and accurate. This will make sure that all sites within their TLD continue to function fully within modern browsers, in terms of the site owners' ability to set cookies and so on.
 
 In addition, owners of privately-registered domains who themselves issue subdomains to mutually-untrusting parties may wish to be added to the PRIVATE section of the list.
@@ -63,3 +65,4 @@ In some circumstances, we may proceed with the email-based validation. However, 
 
 For large companies we may require a mailing list such as `security@example.com` or administrative email, rather user-specific emails.
 
+## Submitting
