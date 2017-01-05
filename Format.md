@@ -1,4 +1,4 @@
-# Styleguide
+# Format
 
 ## Right-to-left sorting
 
