@@ -14,9 +14,17 @@ Updates can be filed as either pull requests or issues, however a pull request i
 
 Submissions are discussed either in the issue or in the pull request. Each submission requires validation, authentication and approval:
 
-- **Validation**: the patch is validated to make sure it follows the [list format](https://publicsuffix.org/list/).
+- **Validation**: the patch is validated to make sure the domains are acceptable and the patch follows the [list format](https://publicsuffix.org/list/).
 - **Authentication**: the patch is authenticated to make sure the changes are legit. The exact authorization procedure depends on the type of changes (see below).
 - **Approval**: the patch is manually approved and merged. Generally, if the patch is validated and authenticated the approval is granted. However, in some cases we reject the request or encourage the submitter to alter the patch if we feel that the change will negatively impact the experience of the PSL consumers.
+
+## Validation
+
+Our acceptance criteria are as follows:
+
+* We do not accept entries for use as DNS wildcards, such that e.g. 1-2-3-4.foo.tld resolves as IP address 1.2.3.4. This basically projects the security properties of the IP address space onto the domain name space, and we don't feel that is safe. IP addresses can be dynamically allocated to multiple mutually-untrusting parties; domain names generally are not.
+
+* We do not accept entries whose sole purpose is to circumvent Let's Encrypt rate limits. They have a [form](https://letsencrypt.org/docs/rate-limits/) you can use.
 
 ## Authentication
 
@@ -65,8 +73,7 @@ In some circumstances, we may proceed with the email-based validation. However, 
 
 For large companies we may require a mailing list such as `security@example.com` or administrative email, rather user-specific emails.
 
-
-## Submit amendments
+## Submitting Amendments
 
 Follow this procedure to submit a change to the list.
 
