@@ -117,7 +117,7 @@ Prepare your change. Here's some rules to keep in mind:
 
 ### Submit the change
 
-Either open a ticket and paste the change (use the code Markdown formatting), or (recommended) [create a pull request](https://help.github.com/articles/creating-a-pull-request/).
+[Create a pull request](https://help.github.com/articles/creating-a-pull-request/) with the requested changes.
 
 It's recommended to clone and edit the change locally, as you will be able to test the changes before submitting the request. However, if you feel more comfortable, just use the GitHub in-browser editing feature to submit the pull request.
 
