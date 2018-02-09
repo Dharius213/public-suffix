@@ -30,7 +30,7 @@ Our acceptance criteria are as follows:
 
 ### ICANN Domains
 
-These are Top Level Domains (or their direct, affiliated subordinates) that are **delegated by the IANA**, per ICP-3 (https://www.icann.org/resources/pages/unique-authoritative-root-2012-02-25-en), or new Top Level Domains with a contracting announcement from ICANN (these are in a special section within the ICANN Domains).  
+These are Top Level Domains (or their direct, affiliated subordinates) that are **delegated by the IANA**, per [ICP-3] (https://www.icann.org/resources/pages/unique-authoritative-root-2012-02-25-en), or new Top Level Domains with a contracting announcement from ICANN (these are in a special section within the ICANN Domains).  
 
 Changes here need to either come from a representative of the registry (authenticated in a similar manner to below) or be from public sources such as a registry website.
 
