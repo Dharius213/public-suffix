@@ -124,8 +124,8 @@ It's recommended to clone and edit the change locally, as you will be able to te
 Please provide the following information:
 
 - When submitting private domains, add a brief description of why you want the suffix(es) to be added to the list
-- When submitting private domains, provide expected input/output if you want us to help you validating the correctness of the request
-- When submitting IANA suffixes, provide the authoritative evidences supporting the change (if you work for the registry, just make that clear)
+- When submitting private domains, provide expected input/output to help us validate the correctness of the request
+- When submitting IANA suffixes, provide the authoritative evidences supporting the change (if you work for the registry, please make that clear as well)
 - Provide extra information useful for the PSL team to handle the pull request
 
 ### Test the changes
