@@ -2,6 +2,9 @@ This page collects all the issues affecting the current design of today's PSL. T
 
 ## Issues
 
+- Static list (akin to hosts.txt) vs Server-Based
+  When list is infrequently updated this is a speed enhancement as a local source file, but when updates occur it can lead to stale behavior (a common example of this was during the 2014+ nTLDs sometimes being sent to search vs DNS by omnibox browsers with an old version of PSL locally, where an OS or software update that would update to catch up and remedy may have had long spans between)
+
 - Finite resource
 
   This makes harder to consider patches such as https://github.com/publicsuffix/list/pull/277 that requires the merge of 19k `.NAME` rules.
