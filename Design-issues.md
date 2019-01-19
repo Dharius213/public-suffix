@@ -2,7 +2,7 @@ This page collects all the issues affecting the current design of today's PSL. T
 
 ## Issues
 
-- Static list (akin to hosts.txt) vs Server-Based
+- Static list (akin to hosts.txt) vs Server-Based Solution
 
   This is a static list.  When list is infrequently updated this is a speed enhancement as a local source file, but when updates occur it can lead to stale behavior (a common example of this was during the 2014+ nTLDs sometimes being sent to search vs DNS by omnibox browsers with an old version of PSL locally, where an OS or software update that would update to catch up and remedy may have had long spans between)
 
@@ -24,9 +24,11 @@ This page collects all the issues affecting the current design of today's PSL. T
 
 - Convert to A-labels
 
-  No UTF-8 please.
+  No UTF-8 please. (Follow [Universal Acceptance Steering Group](https://uasg.tech) recommendations.)
 
 - Wildcard
 
   Clarify the use of wildcard. Today we implicitly support any wildcards, but all implementations support only left-outermost wildcard.
+
+  Additionally, the behavior of wildcard and its use and implementation may vary by use-case
 
