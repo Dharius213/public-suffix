@@ -93,15 +93,21 @@ Prepare your change. Here's some rules to keep in mind:
 
 - Follow the repository conventions
 
-- For a new private domain section, start the change with an header that includes the company information and the submitter email. You must be in control of the submitter email, as we may use it for the authentication. The email must belong to the entity that requests the change (note that you can only modify a private domain section if you are an authorized representative of the company).
+- For a IANA domain, update the header only if you have more relevant references.
+
+-
+
+- For a new private domain section, keep the changeset sorted by Company/Product name within the `===BEGIN PRIVATE DOMAINS===` and `===END PRIVATE DOMAINS===` block.
+
+  For example, if your company is called "Example Company" and your want to list the suffixes `foobar.example`, the position of the change will be determined by the alphabetical ordering of "Example Company" and not `foobar.example`.
+
+  Start the change with a header that includes the company information and the submitter email. You must be in control of the submitter email, as we may use it for the authentication. The email must belong to the entity that requests the change (note that you can only modify a private domain section if you are an authorized representative of the company).
 
    ```
    // Example Company : https://example.com/
    // Submitted by John Doe <security@example.com>
    foo.example.com
    ```
-
-- For a IANA domain, update the header only if you have more relevant references.
 
 - Keep the list of suffix (if more than one) in alphabetical order. Sort first by the TLD, then the first label to the left of the TLD, and so forth. For example, the following is sorted by TLD first (`com`, `invalid`, `net`, `org`, `test`), then within each TLD, sorted by the first label (`example`), then, for entries with more labels, each label is sorted, with shorter entries appearing first:
 
