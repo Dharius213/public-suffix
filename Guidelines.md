@@ -160,11 +160,13 @@ Once the PSL update includes a submission, it is important to note that the **PS
 
 #### Derivative Propagation Timing
 
+Changes to the PSL may take time to percolate to clients, [particularly those listed on the website](https://publicsuffix.org/learn/). Given that some platforms have incorporated the PSL within the OS itself, updates may not happen until the next OS update.
+
 In some circumstances, where the list is included or incorporated in some static manner by a library, product or service, one may see timing delays before seeing the change within those works.  This can occur based upon schedules, product road maps and update cycles beyond the control or influence of the PSL maintainers / volunteers.
 
 #### Derivative Use
 
-The PSL resource has no governance on how it is used, in whole, in part, or some modified version by derivative works.
+The PSL resource has no governance on how it is used, in whole, in part, or some modified version by derivative works.  This includes how how vendors treat the addition and/or deletion of entries, or how they process updates information as the PSL gets updated.
 
 #### Inclusion or Non-Inclusion in Derivative Works
 
