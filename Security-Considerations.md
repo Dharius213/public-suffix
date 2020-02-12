@@ -1,5 +1,5 @@
 ### Security and Stability Advisory Committee
-ICANN has a [https://www.icann.org/resources/pages/ssac-role-2018-02-06-en](Security and Stability Advisory Committee), with the role of advising the ICANN community and Board on matters relating to the security and integrity of the Internet's naming and address allocation systems.
+ICANN has a [Security and Stability Advisory Committee](https://www.icann.org/resources/pages/ssac-role-2018-02-06-en), with the role of advising the ICANN community and Board on matters relating to the security and integrity of the Internet's naming and address allocation systems.
 
 They created a working group which convened 2014-2015 to review the use of Public Suffix Lists, and how to impliment them within software, in security, and in language libraries and other systems.  This ultimately resulted in SAC070, an advisory on the use of Public Suffix Lists.
 
