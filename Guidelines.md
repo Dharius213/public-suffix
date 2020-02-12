@@ -154,12 +154,18 @@ Patches that don't pass the tests will be rejected.
 
 After submission, please follow-up to the ticket and any correspondence email regarding questions, until the ticket is closed. Also make sure that the email you listed in the pull request is valid, as we may use it for validation or private follow ups.
 
-### Expectations on Inclusion and Propagation
+### Appropriate Expectations on Derivative Propagation, Use or Inclusion 
 
-#### Inclusion
-Submissions require a varying amount of review and validation, sometimes with iterations of dialog between the submitter and the volunteers or others, as required.  The time required to process an inclusion can vary.
+Once the PSL update includes a submission, it is important to note that the **PSL maintainers do not control the frequency of updates or inclusion of the change in the products or services that utilize the list**, how the list is used there, and most importantly **if** that derivative work will include the update (**or not**).
 
-#### Propagation
-Once the PSL update includes a submission, it is important to note that the **PSL maintainers do not control the frequency of updates or inclusion of the change in the products or services that utilize the list**, or how the list is used by them.  
+#### Derivative Propagation Timing
 
 In some circumstances, where the list is included or incorporated in some static manner by a library, product or service, one may see timing delays before seeing the change within those works.  This can occur based upon schedules, product road maps and update cycles beyond the control or influence of the PSL maintainers / volunteers.
+
+#### Derivative Use
+
+The PSL resource has no governance on how it is used, in whole, in part, or some modified version by derivative works.
+
+#### Inclusion or Non-Inclusion in Derivative Works
+
+The Public Suffix List is a list. It is entirely the decision and control of those who use or incorporate the list what they choose to do or not do.  If there is a means to contact those parties who maintain or control the derivative works, they are the appropriate place to follow-up.  It is constructive to allow for reasonable delay for the propagation of changes before doing so, regardless of the sense of urgency.
