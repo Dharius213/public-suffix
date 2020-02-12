@@ -95,8 +95,6 @@ Prepare your change. Here's some rules to keep in mind:
 
 - For a IANA domain, update the header only if you have more relevant references.
 
--
-
 - For a new private domain section, keep the changeset sorted by Company/Product name within the `===BEGIN PRIVATE DOMAINS===` and `===END PRIVATE DOMAINS===` block.
 
   For example, if your company is called "Example Company" and your want to list the suffixes `foobar.example`, the position of the change will be determined by the alphabetical ordering of "Example Company" and not `foobar.example`.
