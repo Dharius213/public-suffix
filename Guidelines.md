@@ -10,7 +10,7 @@ The general procedure to make changes is as follows:
 2. [View the list](https://publicsuffix.org/list/), find your top-level domain (if present), and then check the rules already there for accuracy.
 3. If there are any additions, removals or amendments to be made, create a pull request for our Github repo.
 
-Updates can be filed as either pull requests or issues, however a pull request is generally preferred. Pull requests are automatically checked by our test suite, and you can get an immediate feedback whether your submission contains some invalid rules that may cause the patch to be rejected.
+Updates can be filed as either pull requests or issues, however a pull request is generally preferred, and is more rapidly actionable. Pull requests are automatically checked by our test suite, and in many cases, you can get an immediate feedback whether your submission contains some invalid rules that may cause the patch to be rejected.
 
 Submissions are discussed either in the issue or in the pull request. Each submission requires validation, authentication and approval:
 
@@ -18,9 +18,49 @@ Submissions are discussed either in the issue or in the pull request. Each submi
 - **Authentication**: the patch is authenticated to make sure the changes are legit. The exact authorization procedure depends on the type of changes (see below).
 - **Approval**: the patch is manually approved and merged. Generally, if the patch is validated and authenticated the approval is granted. However, in some cases we reject the request or encourage the submitter to alter the patch if we feel that the change will negatively impact the experience of the PSL consumers.
 
+### LoE, impacts the pace of processing, validation or merge of a contribution
+
+This project has a number of contributors, most all of whom are volunteers.  To best process things in the most efficient manner, the following are some factors and dimensions that can impact the order and pace of processing by the volunteers.
+
+#### What type of change is being requested?
+- Additions typically require lower LoE than Modifications/Deletions
+- Modifications/Deletions are higher LoE
+
+All additions scenarios are not equal, and there are factors that can cause things to take longer or not happen (see "Information furnished in the PR template")
+
+Contributor frequency (new vs repeat) submitting party might indicate experience or familiarity that may make the reduce the LoE, or may be posting frequent changes indicating circumstances of higher LoE from closer review.
+
+#### Information furnished in the PR template (BE THOROUGH)
+Questions and clarifications, research or review may or may not be needed, based upon the completeness, clarity, and accuracy of the submission.
+
+- Does the PR have the template filled out completely and clearly in a way that answers the common questions
+  - Why is the PR being requested?  Please be detailed, but not so detailed as to lose the reviewer(s) in the weeds.
+  - What are example domains' use scenarios?  Describe the desired outcome.  Enumerate through example subdomains or the name iteself and how these are desired to work as a result of the PR being merged.  This is particularly important with respect to wildcards (*) and bangs (!) and ensuring the result will align with the request.
+- How many domains are being requested within the PR?
+- Are the domains being requested for internal purposes (e.g. organization Foo wants their dev/staging servers, which only they use/access) or is this for general utility
+  - Basically, does every user shipping the PSL benefit from the added size/processing?
+- What's the registration period for the domain (if in the PRIVATE section)? (i.e. the risk of churning)
+
+#### Validation of submission(s):  (ALWAYS) 
+This has a range of LoE.  These are not mutually exclusive validation techniques, and the bias is the DNS validation as it is difficult or impossible to forge.  The other methods create a burden of research for the volunteers and severely impact the pace of processing or prioritization.
+
+- On the lower side of LoE, Zone validation via DNS and _PSL TXT [RFC8553](https://datatracker.ietf.org/doc/rfc8553)-style record matching the PR# will help prove that there is a connection between the authoritative admin or domain owner and the submitted PR.
+- Documented, publicly available policies or enumeration / explanation of the submission from an authoritative source
+- Was this submitted directly from the registry or domain owner?  (if Registry, does this match IANA database in some verifiable manner)
+
+The first one is the most crucial.  The other two are helpful.  Having all three makes things go VERY quickly in the ICANN section.
+
+#### Request size and complexity can also impact the LoE and pace of processing:
+
+- Is this a modification that moves entries in whole or in part from one section to another section?
+- Is this a request that has a lot of domains to validate?
+- Are there a number of clarifying questions that the contributor or the volunteers must pose?
+- Is the contributor responsive to questions?
+
+
 ## Validation
 
-Our acceptance criteria are as follows:
+Our non-acceptance criteria are as follows:
 
 * We do not accept entries for use as DNS wildcards, such that e.g. 1-2-3-4.foo.tld resolves as IP address 1.2.3.4. This basically projects the security properties of the IP address space onto the domain name space, and we don't feel that is safe. IP addresses can be dynamically allocated to multiple mutually-untrusting parties; domain names generally are not.
 
@@ -32,7 +72,7 @@ Our acceptance criteria are as follows:
 
 These are Top Level Domains (or their direct, affiliated subordinates) that are **delegated by the IANA**, per [ICP3](https://www.icann.org/resources/pages/unique-authoritative-root-2012-02-25-en), or new Top Level Domains with a contracting announcement from ICANN (these are in a special section within the ICANN Domains).  
 
-Changes here need to either come from a representative of the registry (authenticated in a similar manner to below) or be from public sources such as a registry website.
+Changes here need to either come from a representative of the registry (authenticated in a similar manner to below) or be from public sources such as a registry website.   As a general rule, the processing of _psl TXT entries in DNS using the method described in the PR allows for more rapid processing, as it allows verification via DNS ([RFC8553](https://datatracker.ietf.org/doc/rfc8553)) by tying the PR to the authority for the zone in question.
 
 ### Private Domains
 
@@ -40,7 +80,7 @@ For private domains we need to confirm that the person submitting the request is
 
 Historically, we have been validating the authentication of the request by using the data in the whois response and sending an email to the domain owner. However, this approach doesn't scale very well. Here's the current validation list, in order of preference.
 
-#### DNS Authentication
+#### [RFC8553](https://datatracker.ietf.org/doc/rfc8553) DNS Authentication
 
 For each suffix included in the patch, add a corresponding DNS TXT record called `_psl` that contains the link to the PR.
 
@@ -66,6 +106,7 @@ https://github.com/publicsuffix/list/pull/100
 $ dig TXT _psl.gammaexample.com
 https://github.com/publicsuffix/list/pull/100
 ```
+This validation is sufficient to rapidly allow the volunteers to associate the administrative control of a resource to the party contributing the PR.
 
 #### Email Authentication
 
