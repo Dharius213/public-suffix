@@ -39,7 +39,7 @@ Questions and clarifications, research or review may or may not be needed, based
 - How many domains are being requested within the PR?
 - Are the domains being requested for internal purposes (e.g. organization Foo wants their dev/staging servers, which only they use/access) or is this for general utility
   - Basically, does every user shipping the PSL benefit from the added size/processing?
-- What's the registration period for the domain (if in the PRIVATE section)? (i.e. the risk of churning)
+- What is the registration period for the domain (_if in the PRIVATE section_)? The PSL now requires a MINIMUM of 2 years' remaining in the registration term.  At very least, provide an attestation that the domain(s) hold ample term, and state a commitment to keeping the domain(s) renewed beyond a year.  At some point in the future, when automated registration term review of private section names occurs, domains expiring within a year may be subject to automated removal (to prevent the risk of churning)
 
 #### Validation of submission(s):  (ALWAYS) 
 This has a range of LoE.  These are not mutually exclusive validation techniques, and the bias is the DNS validation as it is difficult or impossible to forge.  The other methods create a burden of research for the volunteers and severely impact the pace of processing or prioritization.
