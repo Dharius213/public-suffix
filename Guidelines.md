@@ -66,6 +66,8 @@ Our non-acceptance criteria are as follows:
 
 * We do not accept entries whose sole purpose is to circumvent Let's Encrypt rate limits. They have a [form](https://letsencrypt.org/docs/rate-limits/) you can use.
 
+* We now require that domains submitted as private section entries have expiration dates more than 2 years beyond the submitting date of a PR.  Please include a statement within the rationale that a] the domain name(s) submitted have at least 2 years of registration period left in them at the time of submitting the name, and b] include a commitment that you will maintain their registration in good standing with more than a year left in their term.  
+
 ## Authentication
 
 ### ICANN Domains
