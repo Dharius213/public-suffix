@@ -7,6 +7,12 @@ Here are some things to read about here on this Wiki:
 - [[Submission/Editorial Guidelines|Guidelines]]
 - [[Important Security Considerations|Security Considerations]]
 
+Are you here to solve a specific tactical challenge?
+
+- [[Working around cloudflare subdomain limits|Third Party Diffusion]]
+- [[IOS 14 / Facebook Pixel|Third Party Diffusion]]
+- [[Let's Encrypt Limits|Third Party Diffusion]]
+
 Here are some additional informational resources
 
  * [publicsuffix.org Website](https://publicsuffix.org)
