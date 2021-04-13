@@ -20,10 +20,12 @@ Submissions are discussed either in the issue or in the pull request. Each submi
 
 ### LoE, impacts the pace of processing, validation or merge of a contribution
 
-This project has a number of contributors, most all of whom are volunteers.  To best process things in the most efficient manner, the following are some factors and dimensions that can impact the order and pace of processing by the volunteers.
+This project has a number of contributors, most all of whom are volunteering their spare time to process requests and maintain this resource.  To best process things in the most efficient manner, the following are some factors and dimensions that can impact the order and pace of processing by the volunteers.
+
+**Important:  There are NO SERVICE LEVEL AGREEMENTS ON TIME nor any expectation of processing speed or urgency.  Being thorough, clear, and accurate with your request is the best path.  And patient.  **
 
 #### What type of change is being requested?
-- Additions typically require lower LoE than Modifications/Deletions
+- Additions (if complete and thorough) typically require lower LoE than Modifications/Deletions 
 - Modifications/Deletions are higher LoE
 
 All additions scenarios are not equal, and there are factors that can cause things to take longer or not happen (see "Information furnished in the PR template")
@@ -59,13 +61,17 @@ The first one is the most crucial.  The other two are helpful.  Having all three
 - Is the contributor responsive to questions?
 
 
-## Validation
+## Validation and Non-Acceptance Factors
 
-Our non-acceptance criteria are as follows:
+Our non-acceptance (wontfix) criteria are as follows:
 
 * We do not accept entries for use as DNS wildcards, such that e.g. 1-2-3-4.foo.tld resolves as IP address 1.2.3.4. This basically projects the security properties of the IP address space onto the domain name space, and we don't feel that is safe. IP addresses can be dynamically allocated to multiple mutually-untrusting parties; domain names generally are not.
 
 * We do not accept entries whose sole purpose is to circumvent Let's Encrypt rate limits. They have a [form](https://letsencrypt.org/docs/rate-limits/) you can use.
+
+* We do not accept entries that have the objective of getting around limitations that have been put in place by a vendor to protect internet users.  The PSL is not a 'workaround', and Pull Requests that appear to be doing this should expect to be declined.  Be thorough and candid with the rationale furnished with the request.
+
+* File Size and scale of impact of a request is a consideration.  Request modesty is important, and projects that are smaller in scale or are temporary or seasonal in nature will likely be declined.
 
 * We now require that domains submitted as private section entries have expiration dates more than 2 years beyond the submitting date of a PR.  Please include a statement within the rationale that a] the domain name(s) submitted have at least 2 years of registration period left in them at the time of submitting the name, and b] include a commitment that you will maintain their registration in good standing with more than a year left in their term.  
 
