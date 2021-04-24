@@ -9,5 +9,5 @@ In every case, the most appropriate solution to issues such as those that point 
 
 * For issues with Let's Encrypt, contact Let's Encrypt.
 * For issues with Cloudflare, contact Cloudflare.
-* For issues with IOS14, contact Apple.
+* For issues with IOS, contact Apple.
 * For issues with Facebook Pixel, contact Facebook.
