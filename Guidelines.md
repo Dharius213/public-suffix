@@ -212,6 +212,9 @@ Once the PSL update includes a submission, it is important to note that the **PS
 
 Changes to the PSL may take time to percolate to clients, [particularly those listed on the website](https://publicsuffix.org/learn/). Given that some platforms have incorporated the PSL within the OS itself, updates may not happen until the next OS update.
 
+![The Cascade timing on when PSL changes trickle varies](https://raw.githubusercontent.com/publicsuffix/publicsuffix.org/master/images/Cascading1xDownstream.svg)
+In the illustration above, A, B, C, and D are third parties.  These might be a browser, DNS infrastructure, Operating System, or other system or library that pulls and incorporates the PSL from snapshots.  The horizontal axis is time, but not to scale in minutes, hours, days or years.  PSL Volunteers do not have control over this timing.
+
 In some circumstances, where the list is included or incorporated in some static manner by a library, product or service, one may see timing delays before seeing the change within those works.  This can occur based upon schedules, product road maps and update cycles beyond the control or influence of the PSL maintainers / volunteers.
 
 #### Derivative Use
