@@ -213,9 +213,12 @@ Once the PSL update includes a submission, it is important to note that the **PS
 Changes to the PSL may take time to percolate to clients, [particularly those listed on the website](https://publicsuffix.org/learn/). Given that some platforms have incorporated the PSL within the OS itself, updates may not happen until the next OS update.
 
 ![The Cascade timing on when PSL changes trickle varies](https://raw.githubusercontent.com/publicsuffix/publicsuffix.org/master/images/Cascading1xDownstream.svg)
-In the illustration above, A, B, C, and D are third parties.  These might be a browser, DNS infrastructure, Operating System, or other system or library that pulls and incorporates the PSL from snapshots.  The horizontal axis is time, but not to scale in minutes, hours, days or years.  PSL Volunteers do not have control over this timing.
+In the illustration above, A, B, C, and D are third parties.  These might be a browser, DNS infrastructure, Operating System, or other system or library that pulls and incorporates the PSL from snapshots.  The horizontal axis is time, but not to scale in minutes, hours, days or years.  
 
 In some circumstances, where the list is included or incorporated in some static manner by a library, product or service, one may see timing delays before seeing the change within those works.  This can occur based upon schedules, product road maps and update cycles beyond the control or influence of the PSL maintainers / volunteers.
+
+Please note, the same cascade delay circumstances can compound if the initial PR that was submitted in a manner that requires revision (or rollback).  The following illustration shows the impact of submitting PR 1 that had some unintended consequences that get adjustment in PR 2, once the changes are seen to have not behaved as expected.  The same illustration works for a rollback situation, where the requestor decides to remove the changes from the first PR.
+![Cascade Compounds the Timeline on changes where second request comes.](https://raw.githubusercontent.com/publicsuffix/publicsuffix.org/master/images/Cascading2xDownstream.svg)
 
 #### Derivative Use
 
