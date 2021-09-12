@@ -40,7 +40,7 @@ Questions and clarifications, research or review may or may not be needed, based
   - What are example domains' use scenarios?  Describe the desired outcome.  Enumerate through example subdomains or the name iteself and how these are desired to work as a result of the PR being merged.  This is particularly important with respect to wildcards (*) and bangs (!) and ensuring the result will align with the request.
 - How many domains are being requested within the PR?
 - Are the domains being requested for internal purposes (e.g. organization Foo wants their dev/staging servers, which only they use/access) or is this for general utility
-  - Basically, does every user shipping the PSL benefit from the added size/processing?
+  - Basically, does every user shipping the PSL benefit from the added size/processing? (Sure, your opinion might be "YES", but provide support for this)
 - Does every domain in the _PRIVATE_ section have at least two years remaining in the registration term?
   - Modifications take time to reach software that uses the PSL, and so it's important that domain registrations cover at least two years. In general, registrations should be done for a longer term. Note that registration periods of less than a year may result in the automatic removal of the domain. If a TLD does not allow registration for periods for at least this long, they will not be added to the PSL.
 
@@ -229,3 +229,8 @@ The PSL resource has no governance on how it is used, in whole, in part, or some
 #### Inclusion or Non-Inclusion in Derivative Works
 
 The Public Suffix List is a list. It is entirely the decision and control of those who use or incorporate the list what they choose to do or not do.  If there is a means to contact those parties who maintain or control the derivative works, they are the appropriate place to follow-up.  It is constructive to allow for reasonable delay for the propagation of changes before doing so, regardless of the sense of urgency.
+
+### This is only a list
+
+Keep in mind as you submit PR that this PSL is just a list, and you are just adding or updating entries.  The PSL nor its volunteers prescribe what browsers do with entries or their recognition/handling of entries, default behaviours, or other handling.  Browsers do what browsers do, diversely, and the PSL is not the boss of them.  
+
