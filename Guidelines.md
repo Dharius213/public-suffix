@@ -71,9 +71,11 @@ Our non-acceptance (wontfix) criteria are as follows:
 
 * We do not accept entries that have the objective of getting around limitations that have been put in place by a vendor to protect internet users.  The PSL is not a 'workaround', and Pull Requests that appear to be doing this should expect to be declined.  Be thorough and candid with the rationale furnished with the request.
 
-* File Size and scale of impact of a request is a consideration.  Request modesty is important, and projects that are smaller in scale or are temporary or seasonal in nature will likely be declined.
+* File Size and scale of impact of a request is a consideration.  Request modesty is important, and projects that are smaller in scale or are temporary or seasonal in nature will likely be declined.  Examples of this might be sandbox, test, lab, beta, or other exploratory nature changes or requets.
 
-* We now require that domains submitted as private section entries have expiration dates more than 2 years beyond the submitting date of a PR.  Please include a statement within the rationale that a] the domain name(s) submitted have at least 2 years of registration period left in them at the time of submitting the name, and b] include a commitment that you will maintain their registration in good standing with more than a year left in their term.  
+* We now require that domains submitted as private section entries have expiration dates more than 2 years beyond the submitting date of a PR.  Please include a statement within the rationale that a] the domain name(s) submitted have at least 2 years of registration period left in them at the time of submitting the name, and b] include a commitment that you will maintain their registration in good standing with more than a year left in their term. 
+
+* These non-acceptance criterea are subject to change, and the criteria listed here do not necessarily reflect the comprehensive circumstances or situations that will cause a PR not to be accepted.  Accordingly, **this list may be modified or updated at any time**, and the volunteer maintainers reserve the right to decline PR where there is a belief it has potential to introduce issues adverse to security, stability, resilience or other factors, and may do so at their discretion.
 
 ## Authentication
 
